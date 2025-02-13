@@ -23,9 +23,8 @@ Tools I use in my journey:
 - Python  
 - Proxmox  
 
-### Other References  
-Project for learning Python:  
-- [APIFuzzer](https://github.com/sapan322/APIFuzzer) – A simple API fuzzer in Python for enumeration testing.  
+### Other References   
+- [APIFuzzer](https://github.com/sapan322/APIFuzzer) – A simple API fuzzer in Python for enumeration testing.  I makeT his simple project for learning Python: 
 
 **Stay tuned for updates!**  
 I will continue updating my portfolio as I gain more experience and knowledge. More projects and skills will be added over time.  
