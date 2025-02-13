@@ -7,6 +7,8 @@ Recently, I earned the **CompTIA Security+** certification to pursue my passion 
 
 I have strong analytical abilities, persistence, a passion for learning, and problem-solving skills to address security challenges and emerging threats.  
 
+[LinkedIn](https://www.linkedin.com/in/raman-sapunou-753718340/)
+
 ## Portfolio
 
 I am developing a cybersecurity portfolio to showcase my **knowledge, skills, projects, research, documentation, challenges, CTFs, and more**. This portfolio serves as a record of completed and ongoing projects throughout my journey.  
