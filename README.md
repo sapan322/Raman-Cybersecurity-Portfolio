@@ -3,7 +3,7 @@
 ## About Me
 I am Raman Sapunou, an IT enthusiast on the path to cybersecurity.  
 
-Recently, I earned the **CompTIA Security+** certification to pursue my passion for technology and cybersecurity. This certification provided me with a strong foundation in cybersecurity concepts. My ultimate goal is to land my first job in the cybersecurity field.  
+Recently, I earned the [**CompTIA Security+** certification](https://www.credly.com/badges/17531add-3e8e-4cb1-99bb-c5ad4559cfc6/linked_in_profile) to pursue my passion for technology and cybersecurity. This certification provided me with a strong foundation in cybersecurity concepts. My ultimate goal is to land my first job in the cybersecurity field.  
 
 I have strong analytical abilities, persistence, a passion for learning, and problem-solving skills to address security challenges and emerging threats.  
 
