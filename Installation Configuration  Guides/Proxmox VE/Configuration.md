@@ -2,7 +2,14 @@
 This guide covers **Proxmox VE** configuration.  
 You can manage Proxmox VE using:  
 - **Web GUI**: `https://<IP-assigned-by-DHCP>:8006`  
-- **Shell**: Directly on the machine where Proxmox VE is installed  
+- **Shell**: Directly on the machine where Proxmox VE is installed
+
+
+**Contents:**
+
+[Removing Unnecessary Storage Volumes](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#removing-unnecessary-storage-volumes)
+    
+[Prevent Proxmox VE from Turning Off When Closing the Laptop Lid](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#prevent-proxmox-ve-from-turning-off-when-closing-the-laptop-lid)
 
 ---
 
@@ -48,6 +55,8 @@ By default, closing the laptop lid may put the system into sleep mode. To preven
 
 - Restart logind service:  
 
-      systemctl restart systemd-logind  
-
-Now, Proxmox VE will continue running even when the laptop lid is closed.
+      systemctl restart systemd-logind
+  
+### Lessons Learned:  
+- How to configure system settings to prevent sleep mode.
+- Modify system configuration files safely.
