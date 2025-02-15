@@ -13,6 +13,8 @@ You can manage Proxmox VE using:
 
 [Disable the enterprise repository and enable the repository for non-subscribers](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#disable-the-enterprise-repository-and-enable-the-repository-for-non-subscribers)
 
+Update system 
+
 ---
 <!--- 
 ## NAME  
@@ -96,5 +98,22 @@ Change default **enterprise subscriptions** to update Proxmox VE
 
 ### Lessons Learned:  
 - Change enterprise repository to No-Subscription repository
+
+---
+
+## Update system 
+
+Update Proxmox VE
+
+### Steps:  
+
+- **WEB GUI:** Updates -> Refresh
+- Click on Upgrade button and confirm by enter the "y" in shell.
+- When system is upgraded -> enter "exit" command and close shell -> ensure that system upgraded by click "Refresh"
+ button again
+- Reboot proxmox from WEB GUI
+
+### Lessons Learned:  
+- How to update Proxmox VE system  
 
 ---
