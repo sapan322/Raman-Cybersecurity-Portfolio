@@ -1,7 +1,7 @@
 # Description  
 This guide outlines the process of installing the Debian Linux distribution as a virtual machine (VM) on **Proxmox VE**.
 
-### Why Choose Debian?
+### Why I Choose Debian?
 - **Stable**: Known for its reliability and long-term support.
 - **User-friendly**: Easy to set up and manage.
 - **Versatile**: A wide range of applications can run on Debian.
@@ -24,13 +24,14 @@ Go to the [Debian official website](https://www.debian.org/distrib/) and copy th
 3. Click **Download** and wait for the "TASK OK" message to confirm the download is complete. Once done, close the window.
 
 ### Step 2: Create a New Virtual Machine
+*I use this guide on [youtube](https://www.youtube.com/watch?v=XEoO1FgIel4)* 
 
 1. In the **Proxmox WEB GUI**, click **Create VM** and fill in the configuration panel:
+    - **Name**: Give a name to VM
     - **VM ID**: Choose a unique ID for the VM.
     - **ISO Image**: Select the ISO image downloaded in Step 1.
-    - **Qemu checkbox**: Check this option. ([Why this is necessary?](https://pve.proxmox.com/wiki/Qemu-guest-agent))
-    - **SCSI Controller**: Select **Discard** (SSD only, based on my hardware).
-    - **Disk Size**: Set to **12 GiB**.
+    - **Disk Size**: Set VM disk size (at least **10 GiB**).
+    - **CPU Type**: host
     - **Other settings**: Leave them as default.
 
    ![Proxmox VM Configuration](https://github.com/user-attachments/assets/54c9b2cb-5c0a-4423-a3e8-87c316e0083a)
@@ -39,8 +40,9 @@ Go to the [Debian official website](https://www.debian.org/distrib/) and copy th
 
 1. Start the Debian VM.
 2. Go to the **Console** tab to view the installation screen.
-3. Follow the installation prompts, leaving most settings at their default values.
-
+3. Follow the installation prompts, leaving most settings at their default values. 
+4. Remove Debian installation image in "Hardware" -> "CD/DVD Drive" after installation and reboot.
+5. Login to user account -> open up "Terminal" -> login to root by "su" command -> enter "sudo apt update" and "sudo apt upgrade" commands to update system packages
 ---
 
 ## Lessons Learned  
