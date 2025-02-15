@@ -1,21 +1,53 @@
-# Description
-This is guide for Proxmox VE configuration. Web GUI on *"IP address assigned by DHCP server:8006"* or shell on machine with installed Proxmox VE can be used for configuration
+# Description  
+This guide covers **Proxmox VE** configuration.  
+You can manage Proxmox VE using:  
+- **Web GUI**: `https://<IP-assigned-by-DHCP>:8006`  
+- **Shell**: Directly on the machine where Proxmox VE is installed  
 
-## Removing unnecessary storage volumes
+---
 
-After installation, Proxmox automatically creates two storage locations: local and local-lvm. By default, Proxmox uses these for file storage.
-We can remove second storage and use main storage for everything.  
-  - Web GUI: Data Center -> Storage -> local_lvm -> Remove
-  - Proxmox shell: Enter the following commands to resize the **local** storage
-    
-    `lvremove /dev/pve/data`
-    
-    `lvresize -l +100%FREE /dev/pve/root`
-    
-    `resize2fs /dev/mapper/pve-root`
-    
-  - Modify the directory content rules on remain storage to allow installing disk images/containers  on **local** storage.
+## Removing Unnecessary Storage Volumes  
 
+After installation, Proxmox automatically creates two storage locations: **local** and **local-lvm**. By default, Proxmox uses these for file storage.  
+We can remove **local-lvm** and use **local** for everything.  
 
-**Lessons Learned**:
-    How to remove local-lvm storage, resize local storage, and change storage rules.
+### Steps:  
+
+- **Via Web GUI**:  
+  - Navigate to **Data Center → Storage → local-lvm → Remove**  
+
+- **Via Proxmox Shell**:  
+  Run the following commands to remove **local-lvm** and allocate its space to **local**:  
+
+      lvremove /dev/pve/data  
+      lvresize -l +100%FREE /dev/pve/root  
+      resize2fs /dev/mapper/pve-root  
+
+- **Modify storage rules**:  
+  Adjust the **local** storage settings to allow installing disk images and containers.  
+
+### Lessons Learned:  
+- How to remove **local-lvm** storage  
+- How to resize **local** storage  
+- How to modify storage rules  
+
+---
+
+## Prevent Proxmox VE from Turning Off When Closing the Laptop Lid  
+
+By default, closing the laptop lid may put the system into sleep mode. To prevent this:  
+
+- Open `/etc/systemd/logind.conf` file with a text editor:  
+
+      nano /etc/systemd/logind.conf  
+
+- Find and modify the following lines (remove `#` if present):  
+
+      HandleLidSwitch=ignore  
+      HandleLidSwitchDocked=ignore  
+
+- Restart logind service:  
+
+      systemctl restart systemd-logind  
+
+Now, Proxmox VE will continue running even when the laptop lid is closed.
