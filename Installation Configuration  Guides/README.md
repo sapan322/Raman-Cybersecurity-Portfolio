@@ -5,7 +5,40 @@
 [Debian (Proxmox VM)](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM))
 
 
-<!--- 
+<!---INSTALLATION TEMPLATE
+# Description
+
+## Hardware Setup  
+
+## Laptop Preparation  
+
+## Installation Preparation  
+
+## Installation Process  
+1. 
+
+2.
+     
+3. 
+
+## Lessons Learned  
+- 
+-   
+---
+
+--- --->
+
+<!--- CONFIGURATION TEMPLATE
+# Description:  
+
+
+**Contents:**
+
+
+--- --->
+
+<!--- CONFIGURATION STEP
+
 ## NAME  
 
 DESCRIPTION
