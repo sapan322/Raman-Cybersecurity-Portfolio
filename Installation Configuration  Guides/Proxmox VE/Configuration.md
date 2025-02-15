@@ -11,6 +11,8 @@ You can manage Proxmox VE using:
     
 [Prevent Proxmox VE from Turning Off When Closing the Laptop Lid](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#prevent-proxmox-ve-from-turning-off-when-closing-the-laptop-lid)
 
+[Disable the enterprise repository and enable the repository for non-subscribers](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#disable-the-enterprise-repository-and-enable-the-repository-for-non-subscribers)
+
 ---
 <!--- 
 ## NAME  
