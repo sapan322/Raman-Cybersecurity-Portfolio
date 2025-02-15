@@ -12,6 +12,24 @@ You can manage Proxmox VE using:
 [Prevent Proxmox VE from Turning Off When Closing the Laptop Lid](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Proxmox%20VE/Configuration.md#prevent-proxmox-ve-from-turning-off-when-closing-the-laptop-lid)
 
 ---
+<!--- 
+## NAME  
+
+DESCRIPTION
+
+### Steps:  
+
+- STEP 1
+- STEP 2
+- STEP 3
+
+### Lessons Learned:  
+- LESSON 1  
+- LESSON 2
+- LESSON 3
+
+---
+--- --->
 
 ## Removing Unnecessary Storage Volumes  
 
@@ -42,7 +60,9 @@ We can remove **local-lvm** and use **local** for everything.
 
 ## Prevent Proxmox VE from Turning Off When Closing the Laptop Lid  
 
-By default, closing the laptop lid may put the system into sleep mode. To prevent this:  
+By default, closing the laptop lid may put the system into sleep mode.
+
+### Steps:
 
 - Open `/etc/systemd/logind.conf` file with a text editor:  
 
@@ -60,3 +80,19 @@ By default, closing the laptop lid may put the system into sleep mode. To preven
 ### Lessons Learned:  
 - How to configure system settings to prevent sleep mode.
 - Modify system configuration files safely.
+
+---
+ 
+## Disable the enterprise repository and enable the repository for non-subscribers 
+
+Change default **enterprise subscriptions** to update Proxmox VE
+
+### Steps:  
+
+- **WEB GUI:** Updates -> Repositories -> Select the enterprise repository -> Click disable 
+- **WEB GUI:** Click add -> choose "No-Subscription"
+
+### Lessons Learned:  
+- Change enterprise repository to No-Subscription repository
+
+---
