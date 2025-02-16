@@ -1,28 +1,23 @@
-<!--- CONFIGURATION TEMPLATE
 # Description:  
-
+This guide covers Debian VM configuration.
 
 **Contents:**
 
 
---- --->
+---
 
-<!--- CONFIGURATION STEP
+## Updating packages:
 
-## NAME  
-
-DESCRIPTION
+Updating packages ensures security fixes, stability improvements, and access to the latest features.
 
 ### Steps:  
 
-- STEP 1
-- STEP 2
-- STEP 3
+- Open up "Terminal" -> login to root by "su" command 
+- Enter `sudo apt update` and after `sudo apt upgrade` commands to update system packages
 
 ### Lessons Learned:  
-- LESSON 1  
-- LESSON 2
-- LESSON 3
+- How to login to root user
+- How update Debian packages
 
 ---
---- --->
+
