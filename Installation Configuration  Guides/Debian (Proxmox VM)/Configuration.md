@@ -3,7 +3,9 @@ This guide covers Debian VM configuration.
 
 **Contents:**  
 [Updating Packages](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#updating-packages)  
+
 [Fix Low FPS in Debian VM](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#fix-low-fps-in-debian-vm)
+
 [Install OpenSSH Server](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#install-openssh-server)  
 
 ---
