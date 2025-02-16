@@ -43,3 +43,24 @@ If your Debian VM in Proxmox has low FPS or sluggish graphical performance, adju
 - How increasing video memory can enhance responsiveness.
 
 ---
+
+## Install OpenSSH Server  
+
+OpenSSH is a suite of secure networking utilities based on the Secure Shell (SSH) protocol, allowing secure remote access to the system.  
+
+### Steps:  
+
+1. Open the **Terminal**.  
+2. Log in as the root user:  
+   - `su`  
+3. Install the OpenSSH server:  
+   - `apt-get install openssh-server`  
+4. Verify that the SSH service is running:  
+   - `systemctl status ssh`  
+
+### Lessons Learned:  
+- How to install and configure an SSH server in Debian.  
+- How to check if the SSH service is running.  
+
+
+---
