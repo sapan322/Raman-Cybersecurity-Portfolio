@@ -1,23 +1,25 @@
 # Description:  
 This guide covers Debian VM configuration.
 
-**Contents:**
-
+**Contents:**  
+[Updating Packages](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#updating-packages)  
 
 ---
 
-## Updating packages:
+## Updating Packages  
 
-Updating packages ensures security fixes, stability improvements, and access to the latest features.
+Regularly updating packages ensures security fixes, stability improvements, and access to the latest features.  
 
 ### Steps:  
 
-- Open up "Terminal" -> login to root by "su" command 
-- Enter `sudo apt update` and after `sudo apt upgrade` commands to update system packages
+1. Open the **Terminal**.  
+2. Log in as the root user:  
+   - `su`  
+3. Update and upgrade system packages:  
+   - `apt update && apt upgrade -y`  
 
 ### Lessons Learned:  
-- How to login to root user
-- How update Debian packages
+- How to log in as the root user.  
+- How to update Debian packages efficiently.  
 
 ---
-
