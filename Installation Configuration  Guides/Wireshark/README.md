@@ -10,12 +10,7 @@ Before installing Wireshark, update the system packages:
 
 1. Install Wireshark:  
    - `sudo apt install wireshark -y`  
-2. (Optional) Allow non-root users to capture packets:  
-   - `sudo dpkg-reconfigure wireshark-common`  
-   - Select **Yes** when prompted.  
-   - Add your user to the `wireshark` group:  
-     - `sudo usermod -aG wireshark $USER`  
-   - Log out and log back in for the changes to take effect.  
+
 
 ## Lessons Learned  
 - How to install Wireshark on Debian.  
