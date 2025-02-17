@@ -14,4 +14,4 @@ Before installing Wireshark, update the system packages:
 
 ## Lessons Learned  
 - How to install Wireshark on Debian.  
-- How to enable packet capturing for non-root users.  
+
