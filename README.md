@@ -17,12 +17,15 @@ I am developing a cybersecurity portfolio to showcase my **knowledge, skills, pr
 | Projects | Skills/Knowledge Gained |  
 | :--- | :--- |  
 | [[1]](https://www.credly.com/badges/17531add-3e8e-4cb1-99bb-c5ad4559cfc6/linked_in_profile) **CompTIA Security+ - Exam Preparation** | `General Security Concepts`, `Threats, Vulnerabilities & Mitigations`, `Security Architecture`, `Security Operations`, `Security Program Management & Oversight`, `CIA Triad` |  
-| [[2]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides) **Installation/Configuration Guides** – for software used in the portfolio | `Proxmox`, `Debian`, `Wireshark` |  
+| [[2]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides) **Installation/Configuration Guides** – for software used in the portfolio | `Proxmox`, `Debian`, `Wireshark` |
+| [[3]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Wireshark) **Packet sniffing with Wireshark** | Collect, identify, and analyze the different types of packets and details as they cross the network. |  
+
 
 ### Tools  
 Tools I use in my journey:  
 - Python  
-- Proxmox  
+- Proxmox
+- Wireshark
 
 ### Other References  
 - **[APIFuzzer](https://github.com/sapan322/APIFuzzer)** – A simple API fuzzer in Python for enumeration testing. I created this project to practice writing Python scripts for cybersecurity applications.  
