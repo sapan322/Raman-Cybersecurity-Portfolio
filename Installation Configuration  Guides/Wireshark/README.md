@@ -9,7 +9,9 @@ Before installing Wireshark, update the system packages:
 ## Installation Process  
 
 1. Install Wireshark:  
-   - `sudo apt install wireshark -y`  
+   - `sudo apt install wireshark -y`
+2. Run Wireshark:
+   - `sudo wireshark` 
 
 
 ## Lessons Learned  
