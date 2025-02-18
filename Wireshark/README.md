@@ -5,7 +5,7 @@ Network traffic monitoring involves capturing, collecting, and recording data pa
 ## Preparation:
 Install Wireshark on Debian VM in Proxmox hypervisor.
 
-### Types of packets (scenarious):
+### Protocols: (scenarious):
 
 
 
