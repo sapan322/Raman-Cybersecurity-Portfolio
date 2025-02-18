@@ -34,15 +34,14 @@ ICMP (Internet Control Message Protocol) is used for network diagnostics and man
 
 ### How Traceroute Works:  
 
+![ICMP](https://github.com/user-attachments/assets/bce50ab7-cd6d-4c1c-9379-d7010e1ba267)  
+
 1. Execute the command `traceroute -I google.com` in the terminal.  
 2. Three packets are sent with **TTL = 1**. The first router drops these packets and replies with **"TTL exceeded"**.  
 3. The **TTL exceeded** message is received from the intermediate router (your home router/switch).  
 4. The **TTL exceeded** message is received from the next intermediate router that received packets with **TTL = 2**.  
 5. Finally, the destination receives the ICMP request and sends the **ICMP Echo Reply** back to the source.  
 
-### Wireshark Capture Example  
-
-![ICMP](https://github.com/user-attachments/assets/bce50ab7-cd6d-4c1c-9379-d7010e1ba267)  
 
 This packet capture in Wireshark shows the **ICMP "TTL exceeded" messages** received from each router along the route to the destination.  
 
