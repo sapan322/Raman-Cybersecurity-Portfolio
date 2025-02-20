@@ -27,4 +27,4 @@ Install Wireshark on Debian VM in Proxmox hypervisor.
 ---
 
 Traffic analysis exercises with Wireshark from [malware-traffic-analysis.net](https://www.malware-traffic-analysis.net/training-exercises.html):
-  - [Detecting and Investigating Malware Traffic](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/Detecting%20and%20Investigating%20Malware%20Traffic%201.md)
+  - [Detecting and Investigating Malware Traffic](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/Detecting%20and%20Investigating%20Malware%20Traffic.md)
