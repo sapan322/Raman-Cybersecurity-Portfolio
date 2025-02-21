@@ -12,13 +12,10 @@ Install Wireshark on Debian VM in Proxmox hypervisor.
 - [No Response Ping](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/ICMP%20(Internet%20Control%20Message%20Protocol).md#no-response-ping)
 - [Traceroute (Using ICMP Packets)](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/ICMP%20(Internet%20Control%20Message%20Protocol).md#traceroute-using-icmp-packets) 
 
----
-
 [HTTP (Hypertext Transfer Protocol)](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/HTTP%20(Hypertext%20Transfer%20Protocol).md)
 
 - [HTTP Unsecure Login Page](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/HTTP%20(Hypertext%20Transfer%20Protocol).md#http-unsecure-login-page)
 
----
 [ARP (Address Resolution Protocol).md](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/ARP%20(Address%20Resolution%20Protocol).md)
 
 - [ARP Resolving Layer 3 (IPv4) Address to Layer 2 (MAC) Address
@@ -26,5 +23,5 @@ Install Wireshark on Debian VM in Proxmox hypervisor.
 
 ---
 
-Traffic analysis exercises with Wireshark from [malware-traffic-analysis.net](https://www.malware-traffic-analysis.net/training-exercises.html):
+### Traffic analysis exercises with Wireshark [malware-traffic-analysis.net](https://www.malware-traffic-analysis.net/training-exercises.html):
   - [Detecting and Investigating Malware Traffic](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Wireshark/Detecting%20and%20Investigating%20Malware%20Traffic.md)
