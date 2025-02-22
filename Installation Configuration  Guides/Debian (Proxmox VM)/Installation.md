@@ -42,7 +42,7 @@ Go to the [Debian official website](https://www.debian.org/distrib/) and copy th
 2. Go to the **Console** tab to view the installation screen.
 3. Follow the installation prompts, leaving most settings at their default values. 
 4. Remove Debian installation image in "Hardware" -> "CD/DVD Drive" after installation and reboot.
-5. Login to user account -> open up "Terminal" -> login to root by "su" command -> enter "sudo apt update" and "sudo apt upgrade" commands to update system packages
+5. Login to user account -> open up "Terminal" -> login to root by "su" command -> enter "apt update" and "apt upgrade" commands to update system packages
 ---
 
 ## Lessons Learned  
