@@ -10,6 +10,8 @@ This guide covers Debian VM configuration.
 
 [Turn off sleep/suspend/hibernate in Debian 12](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#turn-off-sleepsuspendhibernate-in-debian-12)
 
+[Granting Administrative Privileges](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Installation%20Configuration%20%20Guides/Debian%20(Proxmox%20VM)/Configuration.md#granting-administrative-privileges)
+
 ---
 
 ## Updating Packages  
