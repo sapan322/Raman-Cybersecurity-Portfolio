@@ -76,8 +76,17 @@ OpenSSH is a suite of secure networking utilities based on the Secure Shell (SSH
 2. Change line `#AllowSuspend=yes` to `AllowSuspend=no`
 3. Change line `#AllowHibernation=yes` to `AllowHibernation=no`
 4. Reboot system
-
+ 
 ### Lessons Learned:  
 - How to disable sleep/suspend/hibernate in Debian
+
+---
+
+## Granting Administrative Privileges
+
+Add the new user to the sudo group
+
+## Steps:
+Add username to sudoers in terminal: `su` -> enter the rooot password -> `usermod -aG sudo *username*`
 
 ---
