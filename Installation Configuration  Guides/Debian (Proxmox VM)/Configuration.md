@@ -75,6 +75,7 @@ OpenSSH is a suite of secure networking utilities based on the Secure Shell (SSH
 1. `sudo nano /etc/systemd/sleep.conf`
 2. Change line `#AllowSuspend=yes` to `AllowSuspend=no`
 3. Change line `#AllowHibernation=yes` to `AllowHibernation=no`
+4. Reboot system
 
 ### Lessons Learned:  
 - How to disable sleep/suspend/hibernate in Debian
