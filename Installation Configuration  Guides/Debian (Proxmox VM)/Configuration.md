@@ -65,5 +65,16 @@ OpenSSH is a suite of secure networking utilities based on the Secure Shell (SSH
 - How to install and configure an SSH server in Debian.  
 - How to check if the SSH service is running.  
 
+---
+
+## Turn off sleep/suspend/hibernate in Debian 12
+
+### Steps:  
+1. `sudo nano /etc/systemd/sleep.conf`
+2. Change line `#AllowSuspend=yes` to `AllowSuspend=no`
+3. Change line `#AllowHibernation=yes` to `AllowHibernation=no`
+
+### Lessons Learned:  
+- How to disable sleep/suspend/hibernate in Debian
 
 ---
