@@ -14,4 +14,4 @@ A LAMP stack is a group of open-source software installed together to enable a s
 
 ### **A** - Apache:
 1. Update apt packages: Terminal -> `sudo apt update` 
-2. Install Apache: Terminal -> `sudo apt install apache2` -> Confirm by pressing Y
+2. Install Apache: Terminal -> `sudo apt install apache2` -> Confirm by pressing `Y`
