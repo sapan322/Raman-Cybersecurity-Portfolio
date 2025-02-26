@@ -1,4 +1,4 @@
-# Description
+# Building a Basic Virtual Home Lab
 
 A **virtual home lab** is essential for conducting cybersecurity operations such as malware analysis, reverse engineering, indicators of compromise (IOC) identification, vulnerability testing, tool evaluation, malware development, and system hardening.
 
@@ -7,13 +7,13 @@ A virtual lab provides a **controlled** environment for performing potentially r
 This document outlines the steps **I followed** to build my Proxmox-based Virtual Home Lab, including software installations, network configurations, and system preparations.
 
 
-## Requirements
+### Requirements
 
 - Hardware with virtualization support
 - USB flash drive for installation media
 - Internet connection for software downloads and updates
 
-## Software used
+### Software used
 - Rufus (for creating bootable media)
 - Proxmox VE (virtualization platform)
 - pfSense (firewall and router)
@@ -21,13 +21,13 @@ This document outlines the steps **I followed** to build my Proxmox-based Virtua
 - VirtIO Drivers (for optimizing Windows VM performance)
 - Kali Linux (for penetration testing)
 
-## Hardware Preparation: Proxmox VE Installation and Configuration.
+## Step 1: Proxmox VE Installation and Configuration
 I'm already write about it in my "Installation Configuration Guides" - [Proxmox VE](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides/Proxmox%20VE).
-I have documented the Proxmox VE installation and configuration process in my [Installation Configuration Guides](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides/Proxmox%20VE). 
+I have documented the Proxmox VE installation and configuration process in my [Installation Configuration Guides](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides).
 
 ***Outcome***: Proxmox VE is successfully installed and ready for VM deployment.
 
-## Software preparation. 
+## Step 2: Software Preparation
 To begin, I downloaded the required software and uploaded the installation media to Proxmox VE local storage:
 
 - Kali Linux ISO → [[Download](https://www.kali.org/get-kali/#kali-installer-images)]
@@ -37,18 +37,20 @@ To begin, I downloaded the required software and uploaded the installation media
 
  ***Outcome***: All necessary software has been downloaded and stored in Proxmox VE.
 
-## Proxmox VE network interfaces preparation. 
-- Created a Linux Bridge (VMBR10) with VLAN Aware and Autostart enabled in the Proxmox Network tab.
+## Step 3: Proxmox VE Network Configuration
+- Created a Linux Bridge (VMBR10) with ***VLAN Aware*** and ***Autostart*** enabled in the Proxmox Network tab.
 
 ***Outcome***: A dedicated bridge is now available for configuring the firewall and VLAN networking.
 
-## Virtual Machines (VMs) Creation and Software Installation
+## Step 4: Virtual Machines (VMs) Creation and Software Installation
 - Kali Linux VM: Installed following this [guide](https://www.youtube.com/watch?v=KQVdH79-RA8)
 - Windows 10 VM: Installed Windows and VirtIO drivers using this [guide](https://www.youtube.com/watch?v=-KTTmrA3DX8)
-- pfSense VM: Installed the firewall using [this guide](https://www.youtube.com/watch?v=yTMvrPAwbPE), setting: `WAN: VMBR0` and `LAN: VMBR10`
+- pfSense VM: Installed the firewall using [this guide](https://www.youtube.com/watch?v=yTMvrPAwbPE), settings:
+  - `WAN: VMBR0`
+  - `LAN: VMBR10`
 
-## pfSense Configuration.
-To configure pfSense, log in to the web interface at 192.168.10.1 from a VM in the LAN. If accessing from WAN, temporarily disable the firewall by running pfctl -d in the pfSense shell.
+## Step 5: pfSense Configuration
+To configure pfSense, log in to the web interface at `192.168.10.1` from a VM in the LAN. If accessing from WAN, temporarily disable the firewall by running `pfctl -d` in the pfSense shell.
 
 **pfSense Network Zones**
 | Interface | Subnet | Description | 
@@ -60,25 +62,49 @@ To configure pfSense, log in to the web interface at 192.168.10.1 from a VM in t
 pfSense will act as a DHCP server for the LAN (VMBR10):
   - Gateway: 192.168.10.1
   - DHCP Range: 192.168.10.10 - 192.168.10.100
-  - DNS Servers: 8.8.8.8 (Google) and 4.4.4.4 (Cloudflare)
+  - DNS Servers: 8.8.8.8 (Google) and 1.1.1.1 (Cloudflare)
     
 **pfSense Firewall Rules:**
 
-1. Block LAN access to WAN (Home Network)
+1. **Block LAN access to WAN (Home Network)**
   - Source: 192.168.10.0/24 (VLAN 10)
   - Destination: 192.168.8.0/24
   - Action: BLOCK
   - Prevents virtual machines from reaching physical devices on the home network.
-2. Allow LAN access to external networks (Internet & Inter-VM communication)
+  - **If any machine from VLAN 192.168.10.0/24 attempts to send a packet to 192.168.8.0/24, it will be blocked to prevent any connection to my physical machines in WAN and router.**
+    
+2. **Allow LAN access to external networks (Internet & Inter-VM communication)**
   - Source: 192.168.10.0/24 (VLAN 10)
   - Destination: ANY
   - Action: PASS
   - Allows internet access and internal communication between VMs.
+  - **If a packet is not blocked by the first rule, it can proceed to the next rule and be allowed to access the internet and communicate within the VLAN.**
 
  ***Outcome***: pfSense firewall and DHCP are successfully configured, securing the virtual lab network.
 
+ ## Step 6: Final Preparations
+ - Allowed ICMP requests in Windows Firewall for connectivity testing.
+ - Prepare installed Windows with Sysprep and make Windows template.
+ - Clone Windows template and prepare system for usage (activation, software installation, etc.)
+ - Create "Baseline" snapshots for Windows and Kali Linux systems.
+ - Verified connectivity between machines, firewall rules, internet access, DNS resolution, and DHCP functionality.
 
+## Lessons Learned
+   
+1. Proper VLAN Configuration is Essential
+    - Understanding how VLANs work prevented connectivity issues and ensured isolation between networks.
+2. pfSense Provides Strong Network Security
+    - Using pfSense as a firewall allowed for granular control over traffic between virtual machines and the home network.
+3. Snapshots are Crucial for Testing
+    - Taking snapshots before major changes saved time when needing to revert to a clean state.
+4. Windows VMs Require Additional Configuration
+    - Installing VirtIO drivers was necessary for performance optimization, and using Sysprep made template creation easier.
+5. Lab Documentation is Key
+    - Keeping structured documentation ensured that configurations and installations were reproducible and easy to debug.
 
+---
+
+***This guide serves as a foundation for my virtual cybersecurity lab, allowing for safe and structured experimentation with security tools and techniques.***
 
 
 
