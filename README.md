@@ -20,6 +20,7 @@ I am developing a cybersecurity portfolio to showcase my **knowledge, skills, pr
 | [[2]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides) **Installation/Configuration Guides** – for software used in the portfolio | `Proxmox`, `Debian`, `Wireshark` |
 | [[3]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Wireshark) **Packet sniffing with Wireshark** | **Collect, identify, and analyze the different types of packets** and details as they cross the network: `ICMP`, `HTTP`, `ARP`. **Detecting and Investigating Malware Traffic** with Wireshark |  
 | [[4]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/LAMP%20stack%20project%20) **LAMP stack** | **A LAMP stack** is a group of open-source software installed together to enable a server to host dynamic websites and web apps. |  
+| [[5]](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab) **Building a Basic Virtual Home Lab** | Create a virtual home lab for conducting cybersecurity operations. `Proxmox VE Installation and Configuration`, `Software Preparation`, `Proxmox VE Network Configuration`, `Virtual Machines (VMs) Creation and Software Installation`, `pfSense Configuration`, `Virtual Lab Isolation` | 
 
 
 ### Tools  
@@ -28,6 +29,9 @@ Tools I use in my journey:
 - Proxmox
 - Wireshark
 - ChatGPT
+- Rufus
+- Windows
+- Kali Linux
 
 ### Other References  
 - **[APIFuzzer](https://github.com/sapan322/APIFuzzer)** – A simple API fuzzer in Python for enumeration testing. I created this project to practice writing Python scripts for cybersecurity applications.  
