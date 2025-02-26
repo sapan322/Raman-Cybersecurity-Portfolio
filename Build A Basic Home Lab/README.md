@@ -21,6 +21,17 @@ This document outlines the steps **I followed** to build my Proxmox-based Virtua
 - VirtIO Drivers (for optimizing Windows VM performance)
 - Kali Linux (for penetration testing)
 
+### Contents:
+- [Step 1: Proxmox VE Installation and Configuration](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-1-proxmox-ve-installation-and-configuration)
+- [Step 2: Software Preparation](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-2-software-preparation)
+- [Step 3: Proxmox VE Network Configuration](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-3-proxmox-ve-network-configuration)
+- [Step 4: Virtual Machines (VMs) Creation and Software Installation](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-4-virtual-machines-vms-creation-and-software-installation)
+- [Step 5: pfSense Configuration](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-5-pfsense-configuration)
+- [Step 6: Final Preparations](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#step-6-final-preparations)
+- [Lessons Learned
+](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#lessons-learned)
+
+
 ## Step 1: Proxmox VE Installation and Configuration
 I'm already write about it in my "Installation Configuration Guides" - [Proxmox VE](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides/Proxmox%20VE).
 I have documented the Proxmox VE installation and configuration process in my [Installation Configuration Guides](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Installation%20Configuration%20%20Guides).
