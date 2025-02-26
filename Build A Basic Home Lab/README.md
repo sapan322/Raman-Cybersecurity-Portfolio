@@ -128,6 +128,11 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 **Installation**:
 - Install Sysmon on the Windows VM using this [guide](https://www.youtube.com/watch?v=uJ7pv6blyog).
 - Download the latest Sysinternals Suite from [Microsoft's official website.](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) and extract files.
+- Update VM snapshot: **Baseline**
+
+***Outcome***: 
+- Sysmon is installed and actively monitoring system events.
+- Sysinternals Suite is available for advanced system diagnostics and security analysis.
 
 
 
