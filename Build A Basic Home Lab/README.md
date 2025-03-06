@@ -33,6 +33,7 @@ This document outlines the steps **I followed** to build my Proxmox-based Virtua
 - [Lessons Learned
 ](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#lessons-learned)
 - [Update #1: Sysmon and Sysinternals Suite installation on Windows 10 VM ](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/README.md#update-1-sysmon-and-sysinternals-suite-installation-on-windows-10-vm)
+- [Update #2: FLARE-VM installation.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/README.md#update-2-flare-vm-installation)
 
 
 ## Step 1: Proxmox VE Installation and Configuration
