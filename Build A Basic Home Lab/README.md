@@ -139,8 +139,6 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 ## Update #2: **FLARE-VM** installation.
 [**FLARE-VM**](https://github.com/mandiant/flare-vm) is a collection of installation scripts for Windows that enables quick deployment and maintenance of a reverse engineering environment on a virtual machine (VM).
 
-FLARE-VM 
-
 **Installation**:
 - Create a VM for Windows 10, install the OS and VirtIO drivers using this [guide](https://www.youtube.com/watch?v=-KTTmrA3DX8)
 - Disable Windows Updates using this [guide](https://www.windowscentral.com/how-stop-updates-installing-automatically-windows-10)
