@@ -35,6 +35,8 @@ Tools I use in my journey:
 - Kali Linux
 - Sysmon
 - Sysinternals
+- REMnux
+- FLARE-VM
 
 ### Other References  
 - **[APIFuzzer](https://github.com/sapan322/APIFuzzer)** – A simple API fuzzer in Python for enumeration testing. I created this project to practice writing Python scripts for cybersecurity applications.  
