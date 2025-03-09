@@ -129,7 +129,7 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 
 **Sysinternals Suite** is a collection of powerful system diagnostic and troubleshooting tools developed by Microsoft. These utilities cover process management, file system analysis, networking, system monitoring, and advanced security operations.
 
-**Installation**:
+**Installation & Configuration**:
 - Install Sysmon on the Windows VM using this [guide](https://www.youtube.com/watch?v=uJ7pv6blyog).
 - Download the latest Sysinternals Suite from [Microsoft's official website.](https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite) and extract files.
 - Update VM snapshot: **Baseline**
@@ -141,7 +141,7 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 ## Update #2: **FLARE-VM** installation.
 [**FLARE-VM**](https://github.com/mandiant/flare-vm) is a collection of installation scripts for Windows that enables quick deployment and maintenance of a reverse engineering environment on a virtual machine (VM).
 
-**Installation**:
+**Installation & Configuration**:
 - Create a VM for Windows 10, install the OS and VirtIO drivers using this [guide](https://www.youtube.com/watch?v=-KTTmrA3DX8)
 - Disable Windows Updates using this [guide](https://www.windowscentral.com/how-stop-updates-installing-automatically-windows-10)
 - Disable Tamper Protection and Windows Defender via GPO using this [guide](https://superuser.com/questions/1757339/how-to-permanently-disable-windows-defender-real-time-protection-with-gpo/1757341#1757341)
@@ -157,7 +157,7 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 ## Update #3: **REMnux** installation.
 [**REMnux**](https://remnux.org/) is a Linux-based distribution that provides a collection of free tools for reverse engineering and analyzing malicious software.
 
-**Installation**:
+**Installation & Configuration**:
 -  Create a VM for REMnux using an OVF (Open Virtualization Format) image by following this [guide](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/).
 -  Import the OVA as a Proxmox VM using the following resources:
   - [Tobias Hofmann - Import OVA as Proxmox VM](https://www.itsfullofstars.de/2019/07/import-ova-as-proxmox-vm/)
@@ -167,3 +167,23 @@ pfSense will act as a DHCP server for the LAN (VMBR10):
 
 ***Outcome***:
 - The installed REMnux provides a fully equipped environment for malware analysis, eliminating the need to manually find, install, and configure essential tools.
+
+## Update #4: **INetSim** set up.
+[INetSim](https://www.inetsim.org/) is a software suite designed to simulate common internet services in a controlled lab environment, allowing for the analysis of malware network behavior.
+
+### Installation & Configuration:
+1. **Modify INetSim Configuration on Remnux:**
+- Uncomment the `start_service` dns line to enable DNS server simulation.
+- Set the service bind address to 0.0.0.0 to listen on all interfaces.
+- Define the DNS default IP as the IP assigned by pfSense DHCP.
+2. **Start INetSim**:
+- Run `sudo inetsim` on Remnux.
+- If INetSim reports port conflicts, identify the conflicting service using netstat and resolve the issue.
+3. **Configure FlareVM Networking**:
+- Set the Preferred DNS Server to the IP address of Remnux in FlareVM’s network adapter settings.
+4. **Verification & Snapshot**:
+- Test INetSim functionality by attempting to resolve domain names and downloading simulated files.
+- Once verified, create a VM snapshot for future rollback.
+
+***Outcome***:
+- Malware executed on FlareVM will interact with INetSim’s simulated services on Remnux, allowing for safe analysis of network indicators without external exposure.
