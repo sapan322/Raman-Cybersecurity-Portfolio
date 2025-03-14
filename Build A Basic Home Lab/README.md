@@ -34,10 +34,17 @@ This document outlines the steps **I followed** to build my Proxmox-based Virtua
 ](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/tree/main/Build%20A%20Basic%20Home%20Lab#lessons-learned)
 
 ### Updates:
-- [Update #1: Sysmon and Sysinternals Suite installation on Windows 10 VM ](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_1_Sysmon_Sysinternals.md)
-- [Update #2: FLARE-VM installation.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_2_FLARE_VM.md)
-- [Update #3: REMnux installation.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_3_REMnux.md)
-- [Update #4: INetSim set up.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_4_INetSim.md)
+- **Sysmon and Sysinternals Suite:** ***Sysmon*** that helps detect malicious activity, investigate security incidents, and analyze malware behavior. And ***Sysinternals Suite*** - a collection of powerful system diagnostic and troubleshooting tools developed by Microsoft. Links:
+  - [Update #1: Sysmon and Sysinternals Suite installation on Windows 10 VM ](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_1_Sysmon_Sysinternals.md)
+
+- **Malware analysis toolkit:** *FLARE-VM*, *REMnux* with *INetSim* together in VLAN controlled by pfSense create a powerful infrastructure for malware analysis. FLARE-VM for *host based indicators* and Remnux with INetSim to collect *network based indicators* of malware. These tools allow to make professional static and dynamic malware analysis.
+
+![2025-03-14 18_32_55-Window](https://github.com/user-attachments/assets/6a68173b-5bbc-4534-81db-2c78a86a345a)
+
+ Links:  
+  - [Update #2: FLARE-VM installation.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_2_FLARE_VM.md)
+  - [Update #3: REMnux installation.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_3_REMnux.md)
+  - [Update #4: INetSim set up.](https://github.com/sapan322/Raman-Cybersecurity-Portfolio/blob/main/Build%20A%20Basic%20Home%20Lab/Updates/Update_4_INetSim.md)
 
 
 ## Step 1: Proxmox VE Installation and Configuration
